@@ -33,7 +33,7 @@ public class GoogleSearchTest {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(CapabilityType.BROWSER_NAME, browserName);
         String testName = String.format("%s - %s", testArgs[0].toString(), browserName);
-        URL gridUrl = new URL("http://localhost:4444/wd/hub");
+        URL gridUrl = new URL("http://hub:4444/wd/hub");
         caps.setCapability("name", testName);
         webDriver.set(new RemoteWebDriver(gridUrl, caps));
     }

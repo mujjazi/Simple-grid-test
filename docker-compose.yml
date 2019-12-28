@@ -1,6 +1,15 @@
 # docker-compose -f docker-compose.yml up --build --abort-on-container-exit
 version: "3"
 services:
+  firefox:
+    image: selenium/node-firefox-debug
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+    networks: ['selenium-grid']
   chrome:
     image: selenium/node-chrome-debug
     volumes:
