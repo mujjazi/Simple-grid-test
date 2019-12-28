@@ -1,4 +1,5 @@
-# docker-compose -f docker-compose.yml up --build --abort-on-container-exit
+# To execute this docker-compose yml file
+# use `docker-compose -f docker-compose.yml up --build --abort-on-container-exit --scale chrome=2 --scale firefox=2`
 version: "3"
 services:
   firefox:
