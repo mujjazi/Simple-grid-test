@@ -18,7 +18,7 @@ How to use:
 Steps to run Selenoid ([All availible commands](https://github.com/aerokube/cm/blob/master/docs/selenoid-commands.adoc))
 * Download exe file from https://github.com/aerokube/cm/releases
 * **_cm_windows_amd64.exe selenoid start --vnc --port 4444 --args "-limit 10"_** - Run Selenoid
-After launching you can check status and configs: http://localhost:4444/status
+* After launching you can check status and configs: http://localhost:4444/status
 * **_cm_windows_amd64.exe selenoid-ui start --port 8085_** - Run Selenoid UI
 
 
