@@ -18,7 +18,7 @@ How to use:
 Steps to run Selenoid ([All availible commands](https://github.com/aerokube/cm/blob/master/docs/selenoid-commands.adoc))
 * Download exe file from https://github.com/aerokube/cm/releases
 * **_cm_windows_amd64.exe selenoid start --vnc --port 4444 --args "-limit 10"_** - Run Selenoid
-* **_cm_windows_amd64.exe selenoid start-ui --port 8085_** - Run Selenoid UI
+* **_cm_windows_amd64.exe selenoid-ui start --port 8085_** - Run Selenoid UI
 
 
 Before you run Selenoid by default download last two version of docker images for each browsers, but you can config browser versions by yourself.
