@@ -22,7 +22,7 @@ Steps to run Selenoid ([All availible commands](https://github.com/aerokube/cm/b
 
 
 Before you run Selenoid by default download last two version of docker images for each browsers, but you can config browser versions by yourself.
-You shoud navigate to **_C:\Users\khimi\.aerokube\selenoid\browsers.json_** and config by example
+You shoud navigate to **_C:\Users\khimin\\.aerokube\selenoid\browsers.json_** and config by example
 ```
 {
   "firefox": {
