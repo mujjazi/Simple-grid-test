@@ -15,8 +15,8 @@ services:
     image: selenium/node-chrome-debug
     volumes:
       - /dev/shm:/dev/shm
-    ports:
-      - "5556:5900"
+#    ports:
+#      - "5556:5900"
     # pwd to VNC Server : secret
     depends_on:
       - hub
