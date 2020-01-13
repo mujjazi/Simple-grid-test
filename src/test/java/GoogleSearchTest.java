@@ -33,7 +33,17 @@ public class GoogleSearchTest {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(CapabilityType.BROWSER_NAME, browserName);
         String testName = String.format("%s - %s", testArgs[0].toString(), browserName);
-        URL gridUrl = new URL("http://hub:4444/wd/hub");
+
+        URL gridUrl;
+
+        // Local Docker
+           gridUrl = new URL("http://hub:4444/wd/hub");
+        // Selenoid
+//           gridUrl = new URL("http://localhost:4444/wd/hub");
+        // SauceLab
+//        gridUrl = new URL("https://naz1719:737846af-6a7c-46fb-92d8-dcdfe9e6551c@ondemand.eu-central-1.saucelabs.com:443/wd/hub");
+
+
         caps.setCapability("name", testName);
         webDriver.set(new RemoteWebDriver(gridUrl, caps));
     }
